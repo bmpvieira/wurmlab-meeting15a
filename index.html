@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Bionode intro</title>
+
+  <link rel="stylesheet" href="vendors/revealjs/css/reveal.css">
+  <link rel="stylesheet" href="vendors/revealjs/css/print/reveal-like-pdf.css">
+  <link rel="stylesheet" href="vendors/Font-Awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="theme/style.css">
+</head>
+
+<body>
+
+  <div class="reveal">
+    <div class="slides">
+      
+<section data-state=front>
+<h2 id="bionode-intro">Bionode intro</h2>
+<p><p style="float: left;"><a href="//bmpvieira.com/allbio14" target="_blank">bmpvieira.com/wurmlab-meeting15a</a></p>
+<br></p>
+<p><a href="http://bionode.io" target="_blank"><img style="padding-left: 5%; width: 50%; float: left;" alt="bionode" src="img/bionode-logo.svg" /></a></p>
+</section>
+
+<section>
+<h3 id="bionode">Bionode</h3>
+<p><strong><a href="http://bionode.io">Bionode.io</a></strong> <span class="fragment" style="font-size: .8em;"> - <em>Modular and universal bioinformatics</em></span>
+<img style="width: 20%;float: right; padding-right: 1em;" alt="bionode" src="img/bionode-logo.svg" /></p>
+<p><span class="fragment" style="font-size: .7em; line-height:10%;">Pipeable UNIX command line tools and JavaScript / Node.js APIs for bioinformatic analysis workflows on the server and browser.
+<a class="fragment" href="http://irccloud.com/#!/ircs://irc.freenode.net:6697/%23bionode">#bionode</a>
+<br>
+<a class="fragment" href="http://gitter.im/bionode/bionode">gitter.im/bionode/bionode</a></p>
+<div style="padding-bottom:1em;"></div>
+
+</section>
+
+<section>
+<h3 id="problem-too-much-data">Problem: Too much data</h3>
+<p><a href="http://nstoler.com/img/sequencingcosts.jpg" target="_blank"><img style="padding-left: 5%; width: 45%; float: left;" alt="sequencingcosts" src="img/sequencingcosts.jpg" /></a></p>
+<p><a href="http://www.nature.com/nature/journal/v498/n7453/pdf/498255a.pdf" target="_blank"><img style="padding-left: 5%; width: 35%; float: left;" alt="datadeluge" src="img/datadeluge.png" /></a></p>
+</section>
+
+<section>
+<h3 id="reproducibility-crisis">Reproducibility crisis</h3>
+<p><a href="http://cnx.org/resources/e268f3f73eb57c4ad741e45dd7c5cdd5/30.jpg" target="_blank"><img style="padding-left: 5%; width: 70%; float: left;" alt="reproducibility" src="img/reproducibility.jpg" /></a></p>
+</section>
+
+<section>
+<h3 id="reproducibility-layers">Reproducibility layers</h3>
+<div style="float: left; width: 30%;">
+<a href="https://octodex.github.com/labtocat" target="_blank"><img style="padding-left: 5%; " alt="labtocat" src="img/labtocat.png" class="" /></a>
+<br>
+Code
+</div>
+
+<div style="float: left; width: 20%;">
+<a href="http://dat-data.com" target="_blank"><img style="" alt="dat" src="img/dat.png" class="" /></a>
+<br>
+Data
+</div>
+
+<p><br></p>
+<div style="float: left; width: 40%;">
+<a href="http://bionode.io" target="_blank"><img style="" alt="bionode" src="img/bionode-logo.svg" /></a>
+<br>
+Workflow
+</div>
+
+<div style="float: left; width: 30%;">
+<a target="_blank" href="http://docker.io"><img class="" style="" alt="docker" src="img/docker.png" /></a>
+<br>
+Environment
+</div>
+
+</section>
+
+<section>
+<p><a href="http://bionode.io" target="_blank"><img style="padding-left: 5%; width: 100%; float: left;" alt="bionode-team" src="img/bionodeteam.png" /></a>
+<small>
+<a href="https://github.com/bionode/bionode/issues/9">Bionode also collaborates with BioJS</a>
+</small></p>
+</section>
+
+<section>
+<h3 id="bionode-list-of-modules">Bionode - list of modules</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Status</th>
+<th>People</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/bionode/bionode-ncbi">ncbi</a></td>
+<td>Data access</td>
+<td><img src="https://img.shields.io/badge/status-production-green.svg?style=flat-square" alt="production"></td>
+<td><a href="https://github.com/bmpvieira"><img src="https://avatars3.githubusercontent.com/u/263386?v=3&amp;s=40" alt="bmpvieira"></a> <a href="https://github.com/maxogden"><img src="https://avatars3.githubusercontent.com/u/39759?v=3&amp;s=40" alt="maxogden"></a> <a href="https://github.com/mafintosh"><img src="https://avatars3.githubusercontent.com/u/376661?v=3&amp;s=40" alt="mafintosh"></a> <a href="https://github.com/olgabot"><img src="https://avatars3.githubusercontent.com/u/806256?v=3&amp;s=40" alt="olgabot"></a> <a href="https://github.com/mlovci"><img src="https://avatars3.githubusercontent.com/u/909047?v=3&amp;s=40" alt="mlovci"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bionode/bionode-fasta">fasta</a></td>
+<td>Parser</td>
+<td><img src="https://img.shields.io/badge/status-production-green.svg?style=flat-square" alt="request"></td>
+<td><a href="https://github.com/bmpvieira"><img src="https://avatars3.githubusercontent.com/u/263386?v=3&amp;s=40" alt="bmpvieira"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bionode/bionode-seq">seq</a></td>
+<td>Wrangling</td>
+<td><img src="https://img.shields.io/badge/status-production-green.svg?style=flat-square" alt="request"></td>
+<td><a href="https://github.com/bmpvieira"><img src="https://avatars3.githubusercontent.com/u/263386?v=3&amp;s=40" alt="bmpvieira"></a> <a href="https://github.com/IsmailM">IM</a> <a href="https://github.com/yeban"><img src="https://avatars3.githubusercontent.com/u/90373?v=3&amp;s=40" alt="yeban"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/daviddao/biojs-rest-ensembl">ensembl</a></td>
+<td>Data access</td>
+<td><img src="https://img.shields.io/badge/status-production-green.svg?style=flat-square" alt="request"></td>
+<td><a href="https://github.com/nerdstrike"><img src="https://avatars3.githubusercontent.com/u/5434501?v=3&amp;s=40" alt="nerdstrike"></a> <a href="https://github.com/emepyc"><img src="https://avatars3.githubusercontent.com/u/473962?v=3&amp;s=40" alt="emepyc"></a> <a href="https://github.com/daviddao"><img src="https://avatars0.githubusercontent.com/u/1241240?v=3&amp;s=40" alt="daviddao"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/greenify/biojs-io-blast">blast-parser</a></td>
+<td>Parser</td>
+<td><img src="https://img.shields.io/badge/status-production-green.svg?style=flat-square" alt="request"></td>
+<td><a href="https://github.com/greenify"><img src="https://avatars1.githubusercontent.com/u/4370550?v=3&amp;s=40" alt="greenify"></a></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section>
+<h3 id="bionode-list-of-modules">Bionode - list of modules</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Status</th>
+<th>People</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/bionode/bionode-template">template</a></td>
+<td>Documentation</td>
+<td><img src="https://img.shields.io/badge/status-production-green.svg?style=flat-square" alt="request"></td>
+<td><a href="https://github.com/bmpvieira"><img src="https://avatars3.githubusercontent.com/u/263386?v=3&amp;s=40" alt="bmpvieira"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bionode/bionode-examples">JS pipeline</a></td>
+<td>Documentation</td>
+<td><img src="https://img.shields.io/badge/status-production-green.svg?style=flat-square" alt="request"></td>
+<td><a href="https://github.com/bmpvieira"><img src="https://avatars3.githubusercontent.com/u/263386?v=3&amp;s=40" alt="bmpvieira"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bionode/bionode-example-dat-gasket">Gasket pipeline</a></td>
+<td>Documentation</td>
+<td><img src="https://img.shields.io/badge/status-production-green.svg?style=flat-square" alt="request"></td>
+<td><a href="https://github.com/bmpvieira"><img src="https://avatars3.githubusercontent.com/u/263386?v=3&amp;s=40" alt="bmpvieira"></a></td>
+</tr>
+<tr>
+<td><a href="http://maxogden.github.io/get-dat">Dat/Bionode workshop</a></td>
+<td>Documentation</td>
+<td><img src="https://img.shields.io/badge/status-production-green.svg?style=flat-square" alt="request"></td>
+<td><a href="https://github.com/bmpvieira"><img src="https://avatars3.githubusercontent.com/u/263386?v=3&amp;s=40" alt="bmpvieira"></a></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section>
+<h3 id="bionode-list-of-modules">Bionode - list of modules</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Status</th>
+<th>People</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/bionode/bionode-sra">sra</a></td>
+<td>Wrappers</td>
+<td><img src="https://img.shields.io/badge/status-development-orange.svg?style=flat-square" alt="development"></td>
+<td><a href="https://github.com/bmpvieira"><img src="https://avatars3.githubusercontent.com/u/263386?v=3&amp;s=40" alt="bmpvieira"></a> <a href="https://github.com/olgabot"><img src="https://avatars3.githubusercontent.com/u/806256?v=3&amp;s=40" alt="olgabot"></a> <a href="https://github.com/mlovci"><img src="https://avatars3.githubusercontent.com/u/909047?v=3&amp;s=40" alt="mlovci"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bionode/bionode-bwa">bwa</a></td>
+<td>Wrappers</td>
+<td><img src="https://img.shields.io/badge/status-development-orange.svg?style=flat-square" alt="development"></td>
+<td><a href="https://github.com/bmpvieira"><img src="https://avatars3.githubusercontent.com/u/263386?v=3&amp;s=40" alt="bmpvieira"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bionode/bionode-sam">sam</a></td>
+<td>Wrappers</td>
+<td><img src="https://img.shields.io/badge/status-development-orange.svg?style=flat-square" alt="development"></td>
+<td><a href="https://github.com/bmpvieira"><img src="https://avatars3.githubusercontent.com/u/263386?v=3&amp;s=40" alt="bmpvieira"></a> <a href="https://github.com/ekg"><img src="https://avatars3.githubusercontent.com/u/145425?v=3&amp;s=40" alt="ekg"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bionode/bionode-bbi">bbi</a></td>
+<td>Parser</td>
+<td><img src="https://img.shields.io/badge/status-development-orange.svg?style=flat-square" alt="development"></td>
+<td><a href="https://github.com/bmpvieira"><img src="https://avatars3.githubusercontent.com/u/263386?v=3&amp;s=40" alt="bmpvieira"></a> <a href="https://github.com/dasmoth"><img src="https://avatars3.githubusercontent.com/u/209047?v=3&amp;s=40" alt="dasmoth"></a></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section>
+<h3 id="bionode-list-of-modules">Bionode - list of modules</h3>
+<p><img src="https://img.shields.io/badge/status-request-blue.svg?style=flat-square" alt="request"></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>People</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/bionode/bionode-ebi">ebi</a></td>
+<td>Data access</td>
+<td><a href="https://github.com/bmpvieira"><img src="https://avatars3.githubusercontent.com/u/263386?v=3&amp;s=40" alt="bmpvieira"></a> <a href="https://github.com/olgabot"><img src="https://avatars3.githubusercontent.com/u/806256?v=3&amp;s=40" alt="olgabot"></a> <a href="https://github.com/mlovci"><img src="https://avatars3.githubusercontent.com/u/909047?v=3&amp;s=40" alt="mlovci"></a> <a href="https://github.com/arq5x"><img src="https://avatars3.githubusercontent.com/u/72291?v=3&amp;s=40" alt="arq5x"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bionode/bionode-semantic">semantic</a></td>
+<td>Data access</td>
+<td><a href="https://github.com/bmpvieira"><img src="https://avatars3.githubusercontent.com/u/263386?v=3&amp;s=40" alt="bmpvieira"></a> <a href="https://github.com/ktym"><img src="https://pbs.twimg.com/profile_images/1124266319/ktym_normal.jpg" alt="ktym"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bionode/bionode-vcf">vcf</a></td>
+<td>Parser</td>
+<td><a href="https://github.com/bmpvieira"><img src="https://avatars3.githubusercontent.com/u/263386?v=3&amp;s=40" alt="bmpvieira"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bionode/bionode-gff">gff</a></td>
+<td>Parser</td>
+<td><a href="https://github.com/bmpvieira"><img src="https://avatars3.githubusercontent.com/u/263386?v=3&amp;s=40" alt="bmpvieira"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bionode/bionode-bowtie">bowtie</a></td>
+<td>Wrappers</td>
+<td><a href="https://github.com/bmpvieira"><img src="https://avatars3.githubusercontent.com/u/263386?v=3&amp;s=40" alt="bmpvieira"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bionode/bionode-sge">sge</a></td>
+<td>Wrappers</td>
+<td><a href="https://github.com/bmpvieira"><img src="https://avatars3.githubusercontent.com/u/263386?v=3&amp;s=40" alt="bmpvieira"></a> <a href="https://github.com/maxogden"><img src="https://avatars3.githubusercontent.com/u/39759?v=3&amp;s=40" alt="maxogden"></a> <a href="https://github.com/ekg"><img src="https://avatars3.githubusercontent.com/u/145425?v=3&amp;s=40" alt="ekg"></a> <a href="https://github.com/gawbul"><img src="https://avatars3.githubusercontent.com/u/321291?v=3&amp;s=40" alt="gawbul"></a> <a href="https://github.com/mkuzak"><img src="https://avatars3.githubusercontent.com/u/208443?v=3&amp;s=40" alt="mkuzak"></a> <a href="https://github.com/badryan">badryan</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bionode/bionode-blast">blast</a></td>
+<td>Wrappers</td>
+<td><a href="https://github.com/bmpvieira"><img src="https://avatars3.githubusercontent.com/u/263386?v=3&amp;s=40" alt="bmpvieira"></a></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section>
+<h3 id="bionode-list-of-modules">Bionode - list of modules</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>People</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/bionode/bionode-vsearch">vsearch</a></td>
+<td>Wrappers</td>
+<td><a href="https://github.com/bmpvieira"><img src="https://avatars3.githubusercontent.com/u/263386?v=3&amp;s=40" alt="bmpvieira"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bionode/bionode-khmer">khmer</a></td>
+<td>Wrappers</td>
+<td><a href="https://github.com/bmpvieira"><img src="https://avatars3.githubusercontent.com/u/263386?v=3&amp;s=40" alt="bmpvieira"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bionode/bionode-rsem">rsem</a></td>
+<td>Wrappers</td>
+<td><a href="https://github.com/olgabot"><img src="https://avatars3.githubusercontent.com/u/806256?v=3&amp;s=40" alt="olgabot"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bionode/bionode-gmap">gmap</a></td>
+<td>Wrappers</td>
+<td><a href="https://github.com/olgabot"><img src="https://avatars3.githubusercontent.com/u/806256?v=3&amp;s=40" alt="olgabot"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bionode/bionode-star">star</a></td>
+<td>Wrappers</td>
+<td><a href="https://github.com/olgabot"><img src="https://avatars3.githubusercontent.com/u/806256?v=3&amp;s=40" alt="olgabot"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bionode/bionode-go">go</a></td>
+<td>Wrappers</td>
+<td><a href="https://github.com/badryan">badryan</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section>
+<h3 id="dat-workshop">Dat workshop</h3>
+<p><a href="http://maxogden.github.io/get-dat">maxogden.github.io/get-dat</a></p>
+<p><a href="http://maxogden.github.io/get-dat" target="_blank"><img style="padding-left: 5%; width: 100%; float: left;" alt="get-dat" src="img/datworkshop.png" /></a></p>
+</section>
+
+<section>
+<h3 id="bionode">Bionode</h3>
+<p><code class="fragment">npm install -g bionode</code><br>
+<code class="fragment">bionode ncbi download gff bacteria</code>
+<code class="fragment">bionode ncbi download sra arthropoda | bionode sra fastq-dump</code><br>
+<code class="fragment">npm install -g bionode-ncbi</code><br>
+<code class="fragment">bionode-ncbi search assembly formicidae | dat import --json</code><br></p>
+</section>
+
+<section>
+<h3 id="some-problems-i-faced-during-my-research-">Some problems I faced during my research:</h3>
+<ul>
+<li class="fragment">For web projects, needed to implement the same functionality on browser and server</li>
+
+<li class="fragment"> Difficulty getting relevant descriptions and datasets from NCBI API using bio* libs</li>
+
+<li class="fragment">Difficulty writing scalable, reproducible and complex bioinformatic pipelines</li>
+</ul>
+
+</section>
+
+<section>
+<p><strong> Need to reimplement the same code on browser and server. </strong></p>
+<p>Solution: JavaScript everywhere</p>
+<ul>
+<li><a href="http://afra.sbcs.qmul.ac.uk">Afra</a> <span class="">-&gt; <a href="">bionode-seq</a> </span></li>
+<li><a href="http://genevalidator.sbcs.qmul.ac.uk">GeneValidator</a> <span class="">-&gt; <a href="https://github.com/bionode/bionode-seq">seq</a>, <a href="https://github.com/bionode/bionode-fasta">fasta</a></span></li>
+<li><a href="http://www.sequenceserver.com">SequenceServer</a></li>
+<li><a href="http://biojs.net">BioJS</a> <span class=""> -&gt; <a href="http://github.com/bionode/bionode/issues/9">collaborating for code reuse</a></span></li>
+<li><a href="http://www.biodalliance.org">Biodalliance</a> <span class="">-&gt; <a href="https://github.com/bionode/bionode-bbi">converting to bionode</a></span></li>
+</ul>
+</section>
+
+<section>
+<p><strong> Difficulty getting relevant description and datasets from NCBI API using bio* libs </strong></p>
+<div class="fragment">
+<p><strong>Python example:</strong> URL for the Achromyrmex assembly?</p>
+<a href="ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA_000188075.1_Si_gnG"><pre>ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA_000188075.1_Si_gnG</pre></a>
+</div>
+
+<pre class="fragment">
+<span class="fragment">import xml.etree.ElementTree as ET</span>
+<span class="fragment">from Bio import Entrez</span>
+<span class="fragment">Entrez.email = "mail@bmpvieira.com"</span>
+<span class="fragment">esearch_handle = Entrez.esearch(db="assembly", term="Achromyrmex")</span>
+<span class="fragment">esearch_record = Entrez.read(esearch_handle)</span>
+<span class="fragment">for id in esearch_record['IdList']:</span>
+<span class="fragment">  esummary_handle = Entrez.esummary(db="assembly", id=id)</span>
+<span class="fragment">  esummary_record = Entrez.read(esummary_handle)</span>
+<span class="fragment">  documentSummarySet = esummary_record['DocumentSummarySet']</span>
+<span class="fragment">  document = documentSummarySet['DocumentSummary'][0]</span>
+<span class="fragment">  metadata_XML = document['Meta'].encode('utf-8')</span>
+<span class="fragment">  metadata = ET.fromstring('<root>' + metadata_XML + '</root>')</span>
+<span class="fragment">  for entry in Metadata[1]:</span>
+<span class="fragment">    print entry.text</span>
+</pre>
+
+<p><span class="fragment">
+Solution: <a href="http://github.com/bionode/bionode-ncbi">bionode-ncbi</a>
+</span></p>
+</section>
+
+<section>
+<p><strong> Difficulty getting relevant description and datasets from NCBI API using bio* libs </strong></p>
+<div class="fragment">
+<p><strong>Example:</strong> URL for the Achromyrmex assembly?</p>
+<a href="http://ftp.ncbi.nlm.nih.gov/genomes/all/GCA_000204515.1_Aech_3.9/GCA_000204515.1_Aech_3.9_genomic.fna.gz"><pre>http://ftp.ncbi.nlm.nih.gov/genomes/all/GCA_000204515.1_Aech_3.9/GCA_000204515.1_Aech_3.9_genomic.fna.gz</pre></a>
+</div>
+
+<p><p class="fragment">JavaScript</p></p>
+<pre class="fragment">
+<span class="fragment">var bio = require('bionode')</span>
+<span class="fragment">bio.ncbi.urls('assembly', 'Acromyrmex', function(urls) {</span>
+<span class="fragment">  console.log(urls[0].genomic.fna)</span>
+<span class="fragment">})</span>
+</pre>
+
+<pre class="fragment">
+<span class="fragment">bio.ncbi.urls('assembly', 'Acromyrmex').on('data', printGenomeURL)</span>
+<span class="fragment">function printGenomeURL(urls) {</span>
+<span class="fragment">  console.log(urls[0].genomic.fna)</span>
+<span class="fragment">})</span>
+</pre>
+
+</section>
+
+<section>
+<p><strong> Difficulty getting relevant description and datasets from NCBI API using bio* libs </strong></p>
+<div class="fragment">
+<p><strong>Example:</strong> URL for the Achromyrmex assembly?</p>
+<a href="http://ftp.ncbi.nlm.nih.gov/genomes/all/GCA_000204515.1_Aech_3.9/GCA_000204515.1_Aech_3.9_genomic.fna.gz"><pre>http://ftp.ncbi.nlm.nih.gov/genomes/all/GCA_000204515.1_Aech_3.9/GCA_000204515.1_Aech_3.9_genomic.fna.gz</pre></a>
+</div>
+
+<p><p class="fragment">JavaScript</p></p>
+<pre class="fragment">
+<span class="fragment">var ncbi = require('bionode-ncbi')</span>
+<span class="fragment">var ndjson = require('ndjson')</span>
+<span class="fragment">ncbi.urls('assembly', 'Acromyrmex')</span>
+<span class="fragment">.pipe(ndjson.stringify())</span>
+<span class="fragment">.pipe(process.stdout)</span>
+</pre>
+
+<p><p class="fragment">BASH</p></p>
+<pre class="fragment">
+<span class="fragment">bionode-ncbi urls assembly Acromyrmex |
+tool-stream extractProperty genomic.fna
+</span>
+</pre>
+
+</section>
+
+<section>
+<p><strong>Difficulty writing scalable, reproducible and complex bioinformatic pipelines.</strong></p>
+<p>Solution: Node.js Streams everywhere</p>
+<pre>
+var ncbi = require('bionode-ncbi')
+var tool = require('tool-stream')
+var through = require('through2')
+var fork1 = through.obj()
+var fork2 = through.obj()
+</pre>
+
+</section>
+
+<section>
+<p><strong>Difficulty writing scalable, reproducible and complex bioinformatic pipelines.</strong></p>
+<p>Solution: Node.js Streams everywhere</p>
+<pre>
+<span class="fragment">ncbi</span>
+<span class="fragment">.search('sra', 'Solenopsis invicta')</span>
+<span class="fragment">.pipe(fork1)</span>
+<span class="fragment">.pipe(dat.reads)</span>
+
+<span class="fragment">fork1</span>
+<span class="fragment">.pipe(tool.extractProperty('expxml.Biosample.id'))</span>
+<span class="fragment">.pipe(ncbi.search('biosample'))</span>
+<span class="fragment">.pipe(dat.samples)</span>
+
+<span class="fragment">fork1</span>
+<span class="fragment">.pipe(tool.extractProperty('uid'))</span>
+<span class="fragment">.pipe(ncbi.link('sra', 'pubmed'))</span>
+<span class="fragment">.pipe(ncbi.search('pubmed'))</span>
+<span class="fragment">.pipe(fork2)</span>
+<span class="fragment">.pipe(dat.papers)</span>
+</pre>
+
+</section>
+
+<section>
+<p><img style="float: left; padding-right:.5em; width:100%;" alt="streams" src="img/streams2.gif" /></p>
+</section>
+
+<section>
+<p><strong>Difficulty writing scalable, reproducible and complex bioinformatic pipelines.</strong></p>
+<pre>
+<span class="fragment">bionode-ncbi search genome Guillardia theta |</span>
+<span class="fragment">tool-stream extractProperty assemblyid |</span>
+<span class="fragment">bionode-ncbi download assembly |</span>
+<span class="fragment">tool-stream collectMatch status completed |</span>
+<span class="fragment">tool-stream extractProperty uid|</span>
+<span class="fragment">bionode-ncbi link assembly bioproject |</span>
+<span class="fragment">tool-stream extractProperty destUID |</span>
+<span class="fragment">bionode-ncbi link bioproject sra |</span>
+<span class="fragment">tool-stream extractProperty destUID |</span>
+<span class="fragment">bionode-ncbi download sra |</span>
+<span class="fragment">bionode-sra fastq-dump |</span>
+<span class="fragment">tool-stream extractProperty destFile |</span>
+<span class="fragment">bionode-bwa mem 503988/GCA_000315625.1_Guith1_genomic.fna.gz |</span>
+<span class="fragment">tool-stream collectMatch status finished|</span>
+<span class="fragment">tool-stream extractProperty sam|</span>
+<span class="fragment">bionode-sam</span>
+</pre>
+
+</section>
+
+<section>
+<p><strong>Difficulty writing scalable, reproducible and complex bioinformatic pipelines.</strong></p>
+<ul>
+<li><a href="https://github.com/bionode/bionode-example-dat-gasket">bionode-example-dat-gasket</a></li>
+<li><a href="http://maxogden.github.io/get-dat/">get-dat workshop</a></li>
+<li><a href="https://github.com/maxogden/get-dat/blob/master/markdown/08-extra-credit.md">get-dat bionode gasket example</a></li>
+</ul>
+</section>
+
+<section>
+<p><strong>Difficulty writing scalable, reproducible and complex bioinformatic pipelines.</strong></p>
+<pre>
+<span class="fragment"> { </span>
+<span class="fragment">   "import-data": [ </span>
+<span class="fragment">     "bionode-ncbi search genome eukaryota", </span>
+<span class="fragment">     "dat import --json --primary=uid" </span>
+<span class="fragment">   ], </span>
+<span class="fragment">   "search-ncbi": [ </span>
+<span class="fragment">     "dat cat", </span>
+<span class="fragment">     "grep Guillardia", </span>
+<span class="fragment">     "tool-stream extractProperty assemblyid", </span>
+<span class="fragment">     "bionode-ncbi download assembly -", </span>
+<span class="fragment">     "tool-stream collectMatch status completed", </span>
+<span class="fragment">     "tool-stream extractProperty uid", </span>
+<span class="fragment">     "bionode-ncbi link assembly bioproject -", </span>
+<span class="fragment">     "tool-stream extractProperty destUID", </span>
+<span class="fragment">     "bionode-ncbi link bioproject sra -", </span>
+<span class="fragment">     "tool-stream extractProperty destUID", </span>
+<span class="fragment">     "grep 35526", </span>
+<span class="fragment">     "bionode-ncbi download sra -", </span>
+<span class="fragment">     "tool-stream collectMatch status completed", </span>
+<span class="fragment">     "tee > metadata.json" </span>
+<span class="fragment">   ], </span>
+</pre>
+
+</section>
+
+<section>
+<p><strong>Difficulty writing scalable, reproducible and complex bioinformatic pipelines.</strong></p>
+<pre>
+<span class="fragment">   "index-and-align": [ </span>
+<span class="fragment">     "cat metadata.json", </span>
+<span class="fragment">     "bionode-sra fastq-dump -", </span>
+<span class="fragment">     "tool-stream extractProperty destFile", </span>
+<span class="fragment">     "bionode-bwa mem **/*fna.gz" </span>
+<span class="fragment">   ], </span>
+<span class="fragment">   "convert-to-bam": [ </span>
+<span class="fragment">     "bionode-sam 35526/SRR070675.sam" </span>
+<span class="fragment">   ] </span>
+<span class="fragment"> } </span>
+
+</pre>
+
+
+</section>
+
+<section>
+<p><strong>Difficulty writing scalable, reproducible and complex bioinformatic pipelines.</strong></p>
+<p><span class="fragment"><a href="https://github.com/datproject/datscript">datscript</a></span></p>
+<p><pre class="fragment">
+pipeline main
+run pipeline import</p>
+<p>pipeline import
+run foobar | run dat import --json
+</pre>
+<span class="fragment"><p class="fragment"><a href="https://github.com/datproject/datscript/blob/master/example.ds">bmpvieira example</a></p></span>
+<span class="fragment"><p class="fragment"><a href="https://github.com/ekg/datscriptish/blob/master/example.dsh">ekg example</a></p></span></p>
+</section>
+
+<section data-state=title>
+<h2 id="extra-slides">Extra slides</h2>
+</section>
+
+<section>
+<h3 id="bionode-why-wrappers-">Bionode - Why wrappers?</h3>
+<ul>
+<li>Same interface between modules (Streams and NDJSON)</li>
+<li>Easy installation with NPM</li>
+<li>Semantic versioning</li>
+<li>Add tests</li>
+<li>Abstract complexity / More user friendly</li>
+</ul>
+</section>
+
+<section>
+<h3 id="bionode-why-node-js-">Bionode - Why Node.js?</h3>
+<p>Same code client/server side</p>
+<p><img style="padding-left: 5%; width: 80%; float: left;" alt="client-server" src="img/client-server.png" />
+<a href="http://browserify.org/" target="_blank"><img style="padding-left: 5%; width: 25%; float: left;" alt="browserify" src="img/browserify.png" /></a></p>
+</section>
+
+<section>
+<h3 id="bionode-why-node-js-">Bionode - Why Node.js?</h3>
+<p><a href="https://nodei.co/#bionode-ncbi" target="_blank"><img style="padding-left: 5%; width: 50%; float: left;" alt="bionode-nci" src="img/bionode-ncbi.png" class="fragment"/></a>
+<a href="http://www.modulecounts.com/" target="_blank"><img style="padding-left: 5%; width: 80%; float: left;" alt="modules" src="img/modules.png" class="fragment"/></a></p>
+</section>
+
+<section>
+<h3 id="reusable-small-and-tested-modules">Reusable, small and tested modules</h3>
+<p><img src="img/badges.png" alt="badges"></p>
+</section>
+
+<section>
+<h3 id="benefit-from-other-js-projects">Benefit from other JS projects</h3>
+<div class="fragment" style="float: left; padding-right:2em; width:20%;">
+<a href="http://dat-data.com" target="_blank">Dat</a>
+<img style="width:100%;" alt="dat" src="img/dat.png" />
+</div>
+
+<div class="fragment" style="float: left; padding-right:2em; width:20%;">
+<a href="http://biojs.net" target="_blank">BioJS</a>
+<img style="width:100%;" alt="biojs" src="img/biojs.png" />
+</div>
+
+<div class="fragment" style="float: left; padding-right:2em; width:20%;">
+<a href="http://noflojs.org" target="_blank">NoFlo</a>
+<img style="width:100%;" alt="noflo" src="img/noflo.jpg" />
+</div>
+
+</section>
+
+<section>
+<section data-background="img/noflo.png"></section>
+
+</section>
+
+<section>
+<section data-background="img/bionode-pipeline.png"></section>
+
+</section>
+
+<section>
+<p><a href="http://nodered.org/" target="_blank"><img style="padding-left: 5%; width: 90%; float: left;" alt="nodered" src="img/nodered.png" /></a></p>
+<p><a href="https://usegalaxy.org/" target="_blank"><img style="padding-left: 5%; width: 90%; float: left;" alt="bionode-galaxy" src="img/bionode-galaxy.png" class="fragment" /></a></p>
+</section>
+
+<section>
+
+</section>
+
+    </div>
+  </div>
+
+<script src="vendors/jquery-1.11.0.min.js"></script>
+
+<!-- reveal -->
+<script src="vendors/revealjs/lib/js/head.min.js"></script>
+<script src="vendors/revealjs/js/reveal.js"></script>
+<script>
+  Reveal.initialize({
+
+    // Display controls in the bottom right corner
+    controls: false,
+
+    // Display a presentation progress bar
+    progress: true,
+
+    // Display a subtle timer bar (time is in minutes)
+    timeRemaining: 15,
+
+    // Push each slide change to the browser history
+    history: true,
+
+    // Enable keyboard shortcuts for navigation
+    keyboard: true,
+
+    // Enable the slide overview mode
+    overview: true,
+
+    // Vertical centering of slides
+    center: false,
+
+    // Loop the presentation
+    loop: false,
+
+    // Change the presentation direction to be RTL
+    rtl: false,
+
+    // Number of milliseconds between automatically proceeding to the
+    // next slide, disabled when set to 0, this value can be overwritten
+    // by using a data-autoslide attribute on your slides
+    autoSlide: 0,
+
+    // Enable slide navigation via mouse wheel
+    mouseWheel: false,
+
+    // Apply a 3D roll to links on hover
+    rollingLinks: false,
+
+    // Transition style
+    transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+    dependencies: [
+        // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+        { src: 'vendors/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+        // Interreveal/pret Markdown in <section> elements
+    { src: 'vendors/revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'vendors/revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); }, callback: function() { baconDemo() } },
+
+        // Syntareveal/x highlight for <code> elements
+          { src: 'vendors/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+          // Zoom reveal/in and out with Alt+click
+          { src: 'vendors/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+
+          // Speakreveal/er notes
+          { src: 'vendors/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+
+          // Remotreveal/e control your reveal.js presentation using a touch device
+          // { src: 'reveal/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+          ]
+
+          });
+    </script>
+</body>
